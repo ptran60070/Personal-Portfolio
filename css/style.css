@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+  box-sizing: border-box;
+  }
+body {
+      margin: 0;
+      font-family: 'Roboto', san-serif;
+      background-color: #F7F1CF;
+}
+#navbar  {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #17292c;
+  padding: 10px;
+  position: fixed;
+  z-index: 10;
+  top: 0 ;
+  left: 0;
+  right:0;
+  }
+#navbar a {
+  color: #fff;
+  margin: 10px 30px ;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+#navbar a:hover{
+ border-bottom: 1.5px #8AB761 solid;
+  color: #8AB761;
+}
+#welcome-section {
+   height: 100vh;
+   background-image: url(showcase.jpeg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: cover;
+      position: relative;
+      color:#fff;
+}
+header *{
+  position: relative;
+  z-index: 1;
+}
+header::after {
+  content:'';
+  background-color: #000;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity: 0.7;
+}
+.site_title {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  }
+
+.project-tile {
+  font-size: 30px;
+  font-family: 'Roboto', sanserif;
+  color: #8AB761;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ANIMATION */
+.text1 {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+.text2 {
+  font-size: 47px;
+}
+.text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #558c3d;
+   background: url(green-stripe-color.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% { 
+    background-position: 2000px 0;
+  }
+}
+
+/*About Me  */
+#About {
+  width: 100%;
+  height: 400px;
+}
+.box {
+  display: block;
+  width: 800px;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: 210px;
+  margin-bottom: 50px;
+  transform: translate(-50%, -50%); 
+  background-color: rgb(109,165,58,.7);
+  border-radius: 7px;
+  border-style: hidden;
+ }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+.aboutme{
+display: block;
+border-radius: 50%;
+margin-left: 90px;
+margin-top: 60px;
+}
+#me {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 50px;
+  }
+#myself {
+  margin-left: 25px;
+  font-size: 17px;
+  line-height: 1.5em;
+  color: #fff;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+}
+
+/*--Projects --*/
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn {
+  background: #8AB761;
+  font-family: 'Shadows Into Light', cursive;
+  border: none;
+  border-radius: 0;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #8AB761;
+  border: 2px solid #8AB761;
+}
+
+/*--Social--*/
+.contact{
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+#Social {
+  width: 100%;
+  height: 175px;
+  background-color: #4F5155;
+  margin-bottom: 0;
+}
+#Social ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+ }
+#Social ul a {
+  border-radius: 50%;
+  border: 1px solid  #fff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+#Social ul a:hover {
+  color: #8AB761;
+  border: 1px solid  #8AB761;
+} 
+/*Footer*/
+footer {
+  background-color: #17292c;
+  color: #e8d878;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 840px) {
+
+}
